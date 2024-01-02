@@ -415,12 +415,131 @@ function showSlides(n) {
 <body>
 
 <h2>Sure, here are some fun and helpful websites for fish owners:</h2>
+    <!-----links icons-->
+    <style>
+      div.gallery {
+        border: 0px solid #ccc;
+      }
+      
+      
+      
+      div.gallery img {
+        width: 150px;
+        height: 150px;
+      }
+      
+      div.desc {
+        padding: 5px;
+        text-align: center;
+      }
+      
+      
+      .responsive {
+        padding: 0 65px;
+        float: left;
+        width: 19.99999%;
+        margin-top: 60px;
+      }
+      
+      @media only screen and (max-width: 700px) {
+        .responsive {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+      
+      @media only screen and (max-width: 500px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+      
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      </style>
+      </head>
+      <body>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="http://blogs.thatpetplace.com/thatfishblog/">
+            <img src="Screenshot 2024-01-02 at 15.17.28.png" alt="Dip Treatments For Fish And Corals" width="100" height="100">
+          </a>
+          <div class="desc">Dip Treatments For Fish And Corals</div>
+        </div>
+      </div>
+      
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://www.petsathome.com/pet-talk/choosing-a-pet-fish-fish-type">
+            <img src="Screenshot 2024-01-02 at 15.18.18.png" alt="The best types of fish to have as a pet" width="200" height="200">
+          </a>
+          <div class="desc">The best types of fish to have as a pet</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://www.thesprucepets.com/low-maintenance-freshwater-fish-4770223">
+            <img src="Screenshot 2024-01-02 at 15.17.52.png" alt="11 Easiest Fish to Take Care Of For Beginners" width="100" height="100">
+          </a>
+          <div class="desc">11 Easiest Fish to Take Care Of For Beginners</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://www.clubpets.com.sg/the-beginners-guide-to-growing-an-amazing-aquarium/">
+            <img src="Screenshot 2024-01-02 at 15.18.29.png" alt="The Beginner’s Guide to Growing an Amazing Aquarium" width="200" height="200">
+          </a>
+          <div class="desc">The Beginner’s Guide to Growing an Amazing Aquarium</div>
+        </div>
+      </div>
 
-<ul>
-  <li>The Spruce: This website has a ton of information on fish care, including articles on different species, tank setup, and health issues.</li>
-  <li>PetMD: This website has a variety of resources for fish owners, including articles on fish health and behavior, as well as a directory of veterinarians who specialize in aquatic care.</li>
-  <li>Aquatic Community: This website is dedicated to all things aquatic, with a forum where you can ask questions and connect with other fish enthusiasts.</li>
-</ul> 
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://www.thepetexpress.co.uk/fish-aquatic-supplies/">
+            <img src="Screenshot 2024-01-02 at 17.10.38.png" alt="extensive range of fish and aquatic supplies" width="200" height="200">
+          </a>
+          <div class="desc">extensive range of fish and aquatic supplies</div>
+        </div>
+      </div>
+      
+      <div class="clearfix"></div>
+
+<section class="review-box">
+
+  <h2>How helpful did you find this page?</h2>
+
+      <div class="stars">
+
+          <span class="star" onclick="rateProduct(1)">★</span>
+
+          <span class="star" onclick="rateProduct(2)">★</span>
+
+          <span class="star" onclick="rateProduct(3)">★</span>
+
+          <span class="star" onclick="rateProduct(4)">★</span>
+
+          <span class="star" onclick="rateProduct(5)">★</span>
+
+      </div>
+
+      <br>
+
+      <textarea id="reviewText" placeholder="Write here comments for other pet lovers..." rows="4"></textarea>
+
+      <br>
+
+      <button onclick="submitComment()">Submit Review</button>
+
+</section>
+
+          
   
   <style>/* Style the footer */
       footer {
