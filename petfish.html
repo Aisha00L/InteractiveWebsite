@@ -513,30 +513,68 @@ function showSlides(n) {
       
       <div class="clearfix"></div>
 
+<style>
+#formlayout{
 
-    <style>
-    star{
-    input[type=star] {
+  margin-left: 15px;
 
-  background-color: #04AA6D;
-    
-  width: 400px;  
+  text-align: left;
 
-  color: white;
+  float: left;
 
-  padding: 12px 20px;
+  position: relative;
 
-  border: none;
+}
+
+ 
+
+input[type=text], select, textarea {
+
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #ccc;
 
   border-radius: 4px;
 
-  cursor: pointer;}
+  box-sizing: border-box;
 
-input[type=star]:hover {background-color: #FFD700;}
-        }
-    </style>
+  margin-top: 6px;
 
-          
+  margin-bottom: 16px;
+
+  resize: vertical;
+
+}
+
+input[type=submit] {
+
+  background-color: #04AA6D;
+
+  color: white;
+width: 10px;
+
+  cursor: pointer;
+
+}
+
+ 
+
+input[type=submit]:hover {
+
+  background-color: #45a049;
+
+}
+
+#message
+
+{
+
+  height:200px;
+
+}
+      </style>
 <section class="review-box">
 
   <h2 style=margin-left:120px>How helpful did you find this page?</h2>
@@ -561,7 +599,7 @@ input[type=star]:hover {background-color: #FFD700;}
 
       <br>
 
-      <button onclick="submitComment()" width=200px>Submit Review</button>
+      <button onclick="submitComment()" width=200px; >Submit Review</button>
 
 </section>
       </body>
@@ -583,32 +621,6 @@ input[type=star]:hover {background-color: #FFD700;}
         <h4>© 2023 Petopia, Inc. All rights reserved</h4>
         </footer>
 
-
-      <section class="review-box">
-
-  <h2>How helpful did you find this page?</h2>
-
-      <div class="stars">
-
-          <span class="star" onclick="rateProduct(1)">★</span>
-
-          <span class="star" onclick="rateProduct(2)">★</span>
-
-          <span class="star" onclick="rateProduct(3)">★</span>
-
-          <span class="star" onclick="rateProduct(4)">★</span>
-
-          <span class="star" onclick="rateProduct(5)">★</span>
-
-      </div>
-
-      <br>
-
-      <textarea id="reviewText" placeholder="Write here comments for other pet lovers..." rows="4"></textarea>
-
-      <br>
-
-      <button onclick="submitComment()">Submit Review</button>
 
 </section>
 
